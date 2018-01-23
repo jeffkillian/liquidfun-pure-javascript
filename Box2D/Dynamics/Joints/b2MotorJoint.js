@@ -121,7 +121,7 @@ box2d.b2MotorJoint = function(def) {
   this.m_K = new box2d.b2Mat22();
 }
 
-box2d.b2MotorJoint.prototype = new bbox2d.b2Joint()
+box2d.b2MotorJoint.prototype = new box2d.b2Joint()
 
 // Solver shared
 /**
