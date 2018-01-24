@@ -1,7 +1,10 @@
 
 liquidfun-pure-javascript
 ========
-I just wanted to play with liquidfun and javascript. To get it going, just open up the "index" file, and you'll get a simple bouncing blob that will jump with any keypress.
+I just wanted to play with liquidfun and javascript as quickly as possible. 
+
+**To get it going: just open up the `index.html` and you'll get a simple bouncing blob that will jump with any keypress.**
+
 None of it is minified, which makes debugging a breeze. It's just so you can get up and running as quickly as possible.  I'll leave the minifying up to the reader.
 
 I looked *everywhere* for a simple box2d port that had readable javascript so debugging was easy, but couldn't find anything. Finally, I found [flyover's port of box2d](https://github.com/flyover/box2d.js), which also conveniently included liquidfun. 
