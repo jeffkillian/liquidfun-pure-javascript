@@ -1,10 +1,11 @@
+
 liquidfun-pure-javascript
 ========
-I just wanted to play with liquidfun and javascript. To get it going, just open up the "index" file, and all files just work. 
-None of it is minified, which makes debugging a breeze. I'll leave the minifying up to the reader.
+I just wanted to play with liquidfun and javascript. To get it going, just open up the "index" file, and you'll get a simple bouncing blob that will jump with any keypress.
+None of it is minified, which makes debugging a breeze. It's just so you can get up and running as quickly as possible.  I'll leave the minifying up to the reader.
 
-[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=isaacburns&url=https://github.com/flyover/box2d.js&title=box2d.js&language=JavaScript&tags=github&category=software) [![PayPal donate button](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=H9KUEZTZHHTXQ&lc=US&item_name=box2d.js&currency_code=USD&bn=PP-DonationsBF:btn_donate_SM.gif:NonHosted "Donate to this project using Paypal")
+I looked *everywhere* for a simple box2d port that had readable javascript so debugging was easy, but couldn't find anything. Finally, I found [flyover's port of box2d](https://github.com/flyover/box2d.js), which also conveniently included liquidfun. 
 
-A JavaScript port of Erin Catto's 2D physics library Box2D including Google's LiquidFun
+The only downside of that was that it used google's closure compiler, which I didn't want to mess with. I therefore manually went through each file, and removed all of the closure compiler references, replacing them with non-closure equivalent javascript.
 
-https://cdn.rawgit.com/flyover/box2d.js/master/Box2D/Build/Testbed/index.html
+I've also included simple drawing functions onto a canvas so you can see what is happening.
