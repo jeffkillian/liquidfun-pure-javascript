@@ -14,3 +14,7 @@ I looked *everywhere* for a simple box2d port that had readable javascript so de
 The only downside of that was that it used google's closure compiler, which I didn't want to mess with. I therefore manually went through each file, and removed all of the closure compiler references, replacing them with non-closure equivalent javascript.
 
 I've also included simple drawing functions onto a canvas so you can see what is happening.
+
+
+**Note:**
+This *also* has support for `b2ParticleSystem.GetBodyContacts`, which for some reason some ports of liquidfun don't support.
