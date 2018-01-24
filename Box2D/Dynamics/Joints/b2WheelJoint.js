@@ -41,7 +41,7 @@ box2d.b2WheelJointDef = function() {
   this.localAxisA = new box2d.b2Vec2(1, 0);
 }
 
-box2d.b2WheelJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2WheelJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -157,7 +157,7 @@ box2d.b2WheelJoint = function(def) {
   this.m_ay.SetZero();
 }
 
-box2d.b2WheelJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2WheelJoint, box2d.b2Joint)
 
 /**
  * @export

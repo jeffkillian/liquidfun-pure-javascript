@@ -37,7 +37,7 @@ box2d.b2RopeJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2(1, 0);
 }
 
-box2d.b2RopeJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2RopeJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -95,7 +95,7 @@ box2d.b2RopeJoint = function(def) {
   this.m_lalcB = new box2d.b2Vec2();
 }
 
-box2d.b2RopeJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2RopeJoint, box2d.b2Joint)
 
 // Solver shared
 /**

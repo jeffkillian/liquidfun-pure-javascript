@@ -36,7 +36,7 @@ box2d.b2AreaJointDef = function() {
   this.bodies = new Array();
 }
 
-box2d.b2AreaJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2AreaJointDef, box2d.b2JointDef)
 
 /**
  * @export
@@ -130,7 +130,7 @@ box2d.b2AreaJoint = function(def) {
   this.m_targetArea *= 0.5;
 }
 
-box2d.b2AreaJoint.prototype =  box2d.b2Joint()
+setInherit(box2d.b2AreaJoint, box2d.b2Joint)
 
 /**
  * @export

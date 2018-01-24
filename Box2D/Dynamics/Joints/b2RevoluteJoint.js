@@ -45,7 +45,7 @@ box2d.b2RevoluteJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2(0, 0);
 }
 
-box2d.b2RevoluteJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2RevoluteJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -177,7 +177,7 @@ box2d.b2RevoluteJoint = function(def) {
   this.m_limitState = box2d.b2LimitState.e_inactiveLimit;
 }
 
-box2d.b2RevoluteJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2RevoluteJoint, box2d.b2Joint)
 
 // Solver shared
 /**

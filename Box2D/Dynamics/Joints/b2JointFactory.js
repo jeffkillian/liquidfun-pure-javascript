@@ -22,6 +22,8 @@
 // // goog.require('box2d.b2Math');
 // // goog.require('box2d.b2Joint');
 
+
+box2d.b2JointFactory = {}
 /**
  * @export
  * @return {box2d.b2Joint}

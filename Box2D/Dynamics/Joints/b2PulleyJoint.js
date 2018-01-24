@@ -47,7 +47,7 @@ box2d.b2PulleyJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2(1, 0);
 }
 
-box2d.b2PulleyJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2PulleyJointDef, box2d.b2JointDef)
 
 /**
  * The first ground anchor in world coordinates. This point
@@ -178,7 +178,7 @@ box2d.b2PulleyJoint = function(def) {
   this.m_impulse = 0;
 }
 
-box2d.b2PulleyJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2PulleyJoint, box2d.b2Joint)
 
 /**
  * @export

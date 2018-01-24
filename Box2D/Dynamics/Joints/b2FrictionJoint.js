@@ -35,7 +35,7 @@ box2d.b2FrictionJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2();
 }
 
-box2d.b2FrictionJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2FrictionJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -110,7 +110,7 @@ box2d.b2FrictionJoint = function(def) {
   this.m_K = new box2d.b2Mat22();
 }
 
-box2d.b2FrictionJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2FrictionJoint, box2d.b2Joint)
 
 /**
  * @export

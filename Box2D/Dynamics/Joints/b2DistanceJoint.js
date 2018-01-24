@@ -40,7 +40,7 @@ box2d.b2DistanceJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2();
 }
 
-box2d.b2DistanceJointDef.prototype = box2d.b2JointDef();
+setInherit(box2d.b2DistanceJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -127,7 +127,7 @@ box2d.b2DistanceJoint = function(def) {
   this.m_length = def.length;
 }
 
-box2d.b2DistanceJoint.prototype = box2d.b2Joint
+setInherit(box2d.b2DistanceJoint, box2d.b2Joint)
 
 /**
  * @export

@@ -35,7 +35,7 @@ box2d.b2MouseJointDef = function() {
   this.target = new box2d.b2Vec2();
 }
 
-box2d.b2MouseJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2MouseJointDef, box2d.b2JointDef)
 
 /**
  * The initial world target point. This is assumed to coincide
@@ -123,7 +123,7 @@ box2d.b2MouseJoint = function(def) {
   this.m_gamma = 0;
 }
 
-box2d.b2MouseJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2MouseJoint, box2d.b2Joint)
 
 /**
  * @export

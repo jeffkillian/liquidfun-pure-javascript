@@ -42,7 +42,7 @@ box2d.b2PrismaticJointDef = function() {
   this.localAxisA = new box2d.b2Vec2(1, 0);
 }
 
-box2d.b2PrismaticJointDef.prototype =  new box2d.b2JointDef()
+setInherit(box2d.b2PrismaticJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -177,7 +177,7 @@ box2d.b2PrismaticJoint = function(def) {
   this.m_rB = new box2d.b2Vec2();
 }
 
-box2d.b2PrismaticJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2PrismaticJoint, box2d.b2Joint)
 
 // Solver shared
 /**

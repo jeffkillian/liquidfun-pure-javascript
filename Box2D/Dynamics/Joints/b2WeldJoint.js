@@ -38,7 +38,7 @@ box2d.b2WeldJointDef = function() {
   this.localAnchorB = new box2d.b2Vec2();
 }
 
-box2d.b2WeldJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2WeldJointDef, box2d.b2JointDef)
 
 /**
  * The local anchor point relative to bodyA's origin.
@@ -125,7 +125,7 @@ box2d.b2WeldJoint = function(def) {
   this.m_K = new box2d.b2Mat33();
 }
 
-box2d.b2WeldJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2WeldJoint, box2d.b2Joint)
 
 /**
  * @export

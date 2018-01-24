@@ -33,7 +33,7 @@ box2d.b2MotorJointDef = function() {
   this.linearOffset = new box2d.b2Vec2(0, 0);
 }
 
-box2d.b2MotorJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2MotorJointDef, box2d.b2JointDef)
 
 /**
  * Position of bodyB minus the position of bodyA, in bodyA's
@@ -121,7 +121,7 @@ box2d.b2MotorJoint = function(def) {
   this.m_K = new box2d.b2Mat22();
 }
 
-box2d.b2MotorJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2MotorJoint, box2d.b2Joint)
 
 // Solver shared
 /**

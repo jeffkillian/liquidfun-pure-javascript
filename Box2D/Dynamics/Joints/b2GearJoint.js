@@ -35,7 +35,7 @@ box2d.b2GearJointDef = function() {
   box2d.b2JointDef.call(this, box2d.b2JointType.e_gearJoint); // base class constructor
 }
 
-box2d.b2GearJointDef.prototype = new box2d.b2JointDef()
+setInherit(box2d.b2GearJointDef, box2d.b2JointDef)
 
 /**
  * The first revolute/prismatic joint attached to the gear
@@ -206,7 +206,7 @@ box2d.b2GearJoint = function(def) {
   this.m_impulse = 0;
 }
 
-box2d.b2GearJoint.prototype = new box2d.b2Joint()
+setInherit(box2d.b2GearJoint, box2d.b2Joint)
 
 /**
  * @export
